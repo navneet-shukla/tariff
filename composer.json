@@ -1,0 +1,40 @@
+{
+    "name": "shuved/shukla",
+    "description": "Test Plugin",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "shukla"
+    ],
+    "support": {
+        "docs": "https://github.com/navneet-shukla/shukla/blob/master/README.md",
+        "issues": "https://github.com/navneet-shukla/shukla/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Navneet",
+            "homepage": "www.w3care.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "shuved\\shukla\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Shukla",
+        "handle": "shukla",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/navneet-shukla/shukla/master/CHANGELOG.md",
+        "class": "shuved\\shukla\\Shukla"
+    }
+}

@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Shukla plugin for Craft CMS
+ *
+ * Tar Field Settings
+ *
+ * @author    Navneet
+ * @copyright Copyright (c) 2018 Navneet
+ * @link      www.w3care.com
+ * @package   Shukla
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("shuved\\shukla\\assetbundles\\shukla\\ShuklaAsset") %}
+
+{{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: field['someAttribute']})
+}}
